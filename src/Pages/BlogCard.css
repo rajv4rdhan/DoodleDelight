@@ -1,0 +1,91 @@
+.container-fluid {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  .blog-card {
+    background-color: white;
+    border-radius: 8px; /* Adjusted for better appearance */
+    box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+    height: 450px;
+    margin: 20px auto; /* Added margin for spacing */
+    max-width: 600px;
+    overflow: hidden;
+    position: relative; /* Needed for absolute positioning of the read-more link */
+  
+    @media (max-width: 580px) {
+      height: 350px;
+      overflow: visible;
+    }
+  }
+  
+  .media {
+    background-position: center;
+    background-size: cover;
+    height: 50%; /* Adjusted to fit the card height */
+  }
+  
+  .card-body {
+    color: #666; /* Example grey color */
+    height: 50%; /* Adjusted to fit the card height */
+    padding: 30px 20px 50px;
+    position: relative; /* Required for positioning the read-more link */
+    background-color: white;
+  
+    @media (max-width: 530px) {
+      background-color: white;
+      padding: 15px; /* Adjusted padding for smaller screens */
+    }
+  }
+  
+  .tagline {
+    font-size: 12px; /* Adjusted for better visibility */
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    color: #000; /* Example color for the title */
+    font-family: "Playfair Display SC", serif;
+    font-size: 24px; /* Adjusted for better fit */
+    font-weight: 400;
+  }
+  
+  .divider {
+    background: #666; /* Example grey color */
+    height: 2px;
+    margin: 25px auto;
+    width: 40px;
+  }
+  
+  .paragraph {
+    font-weight: 300;
+  }
+  
+  .read-more {
+    bottom: 25px;
+    color: #666; /* Example grey color */
+    cursor: pointer;
+    left: 50%;
+    padding: 5px;
+    position: absolute;
+    text-decoration: none;
+    top: auto;
+    transform: translateX(-50%);
+  
+    &:hover,
+    &:focus,
+    &:visited {
+      color: #000; /* Example color for hover and focus states */
+      text-decoration: none;
+    }
+  }
+  
+  @media (max-width: 530px) {
+    .col-xs-6 {
+      width: 100%;
+    }
+  }
+  

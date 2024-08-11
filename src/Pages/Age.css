@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  padding: 20px;
+}
+
+.box {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  text-align: left;
+}
+
+.box-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.box a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.box a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+.blur-image {
+  filter: blur(0px); 
+}
+
+.overlay-text {
+  position: absolute;
+  top: 40%; /* Position the text in the center */
+  left: 30%;
+  transform: translate(-50%, -50%); /* Center the text */
+  color: rgb(29, 34, 35); /* Text color */
+  font-size: 3rem;
+  font-family: "Shantell Sans", cursive;
+  text-align: left;
+
+}
+
+.overlay-text b{
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: "Monoton", sans-serif;
+}
+
+.services {
+  padding: 50px 0;
+  background-color: #E3F6F5;
+  text-align: center; 
+  position: relative;
+  width: 100%;
+  margin: 0 auto; 
+  border-radius: 0px; 
+}
+
+
+
+.services-heading {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #272343;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+
+.services-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+}
+
+.service-item {
+  width: 200px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-item i {
+  font-size: 3rem;
+  color: #ff6b6b;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.service-item h3 {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  font-family: "Yantramanav", sans-serif;
+  color: #333;
+}
+
+.service-item p {
+  margin-top: 10px;
+  color: #666;
+  line-height: 1.5;
+}
+.service-logo{
+  width: 40%;
+}
+
+
+
+
+.use {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  padding: 20px;
+  text-align: center; 
+  gap: 20px; 
+}
+
+.text__data {
+  flex: 1;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.text__data p {
+font-size: 1rem;
+font-family: "Poppins", sans-serif;
+}
+
+.text__data h2 {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  }
+
+.illu__image {
+  flex: 1;
+}
+
+.service-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+

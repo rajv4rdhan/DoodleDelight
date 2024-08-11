@@ -1,0 +1,59 @@
+[
+    {
+      "id": "1",
+      "name": "Shapes for Toddlers",
+      "description": "Simple shapes like circles, squares, and triangles for toddlers to color.",
+      "age_group": "1-3",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "2",
+      "name": "Animal Friends",
+      "description": "Basic drawings of friendly animals for toddlers.",
+      "age_group": "1-3",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "3",
+      "name": "Cartoon Fun",
+      "description": "Cartoon characters and simple scenes for preschoolers.",
+      "age_group": "3-5",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "4",
+      "name": "Fairy Tale Adventures",
+      "description": "Scenes and characters from popular fairy tales for preschoolers.",
+      "age_group": "3-5",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "5",
+      "name": "Animal Kingdom",
+      "description": "More detailed illustrations of animals for early elementary children.",
+      "age_group": "6-8",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "6",
+      "name": "Space Explorers",
+      "description": "Detailed space-themed scenes for early elementary children.",
+      "age_group": "6-8",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "7",
+      "name": "Mandala Art",
+      "description": "Intricate mandala designs for teens to color and enjoy.",
+      "age_group": "13+",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    },
+    {
+      "id": "8",
+      "name": "Pop Culture Icons",
+      "description": "Coloring pages featuring popular trends and icons for teens.",
+      "age_group": "13+",
+      "url": "https://i.imgur.com/OKa3QV4.jpeg"
+    }
+  ]
+  
