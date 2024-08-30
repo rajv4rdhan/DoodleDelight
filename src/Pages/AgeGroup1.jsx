@@ -28,7 +28,7 @@ function App() {
           <div key={item.id} className="card">
             <img src={item.url} alt={item.name} className="box-image" />
             <h2>{item.name}</h2>
-            <p>{item.description}<br/><br/>
+            <p>
             <Button onClick={() => printImage(item.url)} className="print-button" variant="outlined">Print Image</Button>
             </p>
           </div>

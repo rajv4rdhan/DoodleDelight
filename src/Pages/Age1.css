@@ -1,7 +1,7 @@
 /* Lazy Load Styles */
 .card-image {
 	display: block;
-	min-height: 20rem; /* layout hack */
+	min-height: 7rem; /* layout hack */
 	background: #fff center center no-repeat;
 	background-size: cover;
 	filter: blur(3px); /* blur the lowres image */
@@ -28,6 +28,7 @@ html, body {
 	margin: 0;
 	font-size: 16px;
 	font-family: sans-serif;
+	background: #EEF7FF;
 }
 
 .card-list {
@@ -41,10 +42,11 @@ html, body {
 
 .card {
 	display: inline-block;
+	background: #CDE8E5;
 	width: 90%;
-	max-width: 20rem;
+	max-width: 15rem;
 	margin: 1rem;
-	font-size: 1rem;
+	font-size: 0.7rem;
 	text-decoration: none;
 	overflow: hidden;
 	box-shadow: 0 0 3rem -1rem rgba(0,0,0,0.5);
@@ -74,3 +76,4 @@ html, body {
 .App {
     text-align: center;
   }
+
