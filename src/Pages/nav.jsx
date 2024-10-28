@@ -12,8 +12,8 @@ function Navbar() {
             <span className="text-2xl font-bold text-purple-600">KidsColor</span>
           </div>
           <div className="hidden md:flex space-x-6">
-            <a href="#" className="text-gray-600 hover:text-purple-600">Home</a>
-            <a href="#" className="text-gray-600 hover:text-purple-600">Gallery</a>
+            <a href="/" className="text-gray-600 hover:text-purple-600">Home</a>
+            <a href="/age" className="text-gray-600 hover:text-purple-600">Gallery</a>
             <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
             <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
           </div>

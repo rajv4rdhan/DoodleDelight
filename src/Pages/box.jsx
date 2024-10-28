@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Download, Palette, Users, Heart, Star } from 'lucide-react';
-
+import PurposeSection from './purp';
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-100 to-pink-100">
@@ -18,7 +18,7 @@ const LandingPage = () => {
               while developing their artistic skills and imagination.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center justify-center">
+              <button className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center justify-center" onClick={() => (window.location.href = '/age')}>
                 Start Coloring Now
                 <Palette className="ml-2 h-5 w-5" />
               </button>
@@ -30,9 +30,9 @@ const LandingPage = () => {
           </div>
           <div className="md:w-1/2 mt-12 md:mt-0">
             <img 
-              src="/api/placeholder/600/400" 
+              src="/cover.png" 
               alt="Children coloring" 
-              className="rounded-lg shadow-xl"
+              // className="rounded-lg shadow-xl"
             />
           </div>
         </div>
@@ -77,7 +77,7 @@ const LandingPage = () => {
       </div>
 
       {/* Popular Categories */}
-      <div className="container mx-auto px-4 py-16">
+      {/* <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
           Popular Categories
         </h2>
@@ -99,9 +99,10 @@ const LandingPage = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
 
       {/* Footer */}
+      <PurposeSection />
       
     </div>
   );

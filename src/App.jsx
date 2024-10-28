@@ -25,7 +25,7 @@ function App() {
     <AnalyticsTracker />
       <Routes>
         <Route path="/" element={<Box />} />
-        <Route path="/age1-1" element={<AgeGroup1 />} />
+        <Route path="/age" element={<AgeGroup1 />} />
         <Route path="/age2-2" element={<AgeGroup2 />} />
         <Route path="/age3-3" element={<AgeGroup3 />} />
         <Route path="/age4-4" element={<AgeGroup4 />} />
