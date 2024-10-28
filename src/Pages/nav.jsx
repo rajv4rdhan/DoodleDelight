@@ -15,7 +15,7 @@ function Navbar() {
             <a href="/" className="text-gray-600 hover:text-purple-600">Home</a>
             <a href="/age" className="text-gray-600 hover:text-purple-600">Gallery</a>
             <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
-            <a href="#" className="text-gray-600 hover:text-purple-600">Contact</a>
+            <a href="/contact" className="text-gray-600 hover:text-purple-600">Contact</a>
           </div>
           <button className="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition-colors flex items-center">
             Get Started

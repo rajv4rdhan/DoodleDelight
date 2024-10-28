@@ -10,7 +10,7 @@ import './index.css';
 import Footer from './Pages/footer.jsx';
 import AnalyticsTracker from './AnalyticsTracker';
 
-
+import ContactPage from './Pages/contactus.jsx';
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Box />} />
         <Route path="/age" element={<AgeGroup1 />} />
-        <Route path="/age2-2" element={<AgeGroup2 />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/age3-3" element={<AgeGroup3 />} />
         <Route path="/age4-4" element={<AgeGroup4 />} />
       </Routes>
