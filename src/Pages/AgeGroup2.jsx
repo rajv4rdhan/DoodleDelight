@@ -1,14 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import './Age1.css';
 import Button from '@mui/material/Button';
+
 function App() {
   const [data, setData] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     // Fetch the JSON data
     fetch('/data.json')
       .then(response => response.json())
-      .then(data => setData(data))
+      .then(data => {
+        setData(data);
+
+        // Get the age parameter from the URL
+        const params = new URLSearchParams(window.location.search);
+        const age = params.get('age');
+
+        // Filter data based on the age parameter
+        if (age) {
+          const filtered = data.filter(item => item.ageGroup === parseInt(age));
+          setFilteredData(filtered);
+        } else {
+          setFilteredData(data); // Show all if no age is specified
+        }
+      })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
 
@@ -21,16 +37,34 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <h1>Color Book</h1>
-      <div className="card-list">
-        {data.map(item => (
-          <div key={item.id} className="card">
-            <img src={item.url} alt={item.name} className="box-image" />
-            <h2>{item.name}</h2>
-            <p>{item.description}<br/><br/>
-            <Button onClick={() => printImage(item.url)} className="print-button" variant="outlined">Print Image</Button>
-            </p>
+    <div className="bg-cyan-100 min-h-screen flex flex-col items-center justify-center m-0">
+      <div className="App flex flex-wrap justify-center my-10">
+        {filteredData.map((item) => (
+          <div
+            key={item.id} 
+            className="m-3 flex flex-col bg-white shadow-sm border border-slate-200 rounded-xl my-6 w-96"
+          >
+            <div className="m-2.5 overflow-hidden rounded-md h-80 flex justify-center items-center">
+              <img
+                className="w-full h-full object-contain"
+                src={item.url}
+                alt={`${item.name}'s profile`}
+              />
+            </div>
+            <div className="p-6 text-center">
+              <h4 className="mb-1 text-xl font-semibold text-slate-800">
+                {item.name}
+              </h4>
+            </div>
+            <div className="flex justify-center p-6 pt-2 gap-7">
+              <button
+                className="min-w-32 rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                type="button"
+                onClick={() => printImage(item.url)}
+              >
+                PRINT
+              </button>
+            </div>
           </div>
         ))}
       </div>

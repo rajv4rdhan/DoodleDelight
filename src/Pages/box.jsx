@@ -1,69 +1,110 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import './Age.css'
-import Subscribe from './CardGallery.jsx';
+import { ArrowRight, Download, Palette, Users, Heart, Star } from 'lucide-react';
 
-function Box() {
+const LandingPage = () => {
   return (
-    <>
-    <div style={{ paddingTop: '0px' }}>
-      <img className="blur-image" src="bg.jpg" width={'100%'} />
-      <div className="overlay-text">
-      A World of Colorful <br/><b>Possibilities</b>
+    <div className="min-h-screen bg-gradient-to-b from-purple-100 to-pink-100">
+
+      {/* Hero Section */}
+      <div className="container mx-auto px-4 py-16">
+        <div className="flex flex-col md:flex-row items-center">
+          <div className="md:w-1/2">
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-800 mb-6">
+              Unleash Your Child's
+              <span className="text-purple-600"> Creativity</span>
+            </h1>
+            <p className="text-lg text-gray-600 mb-8">
+              Discover hundreds of fun coloring pages that will keep your children entertained
+              while developing their artistic skills and imagination.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4">
+              <button className="bg-purple-600 text-white px-8 py-3 rounded-full hover:bg-purple-700 transition-colors flex items-center justify-center">
+                Start Coloring Now
+                <Palette className="ml-2 h-5 w-5" />
+              </button>
+              <button className="border-2 border-purple-600 text-purple-600 px-8 py-3 rounded-full hover:bg-purple-600 hover:text-white transition-colors flex items-center justify-center">
+                Download Pages
+                <Download className="ml-2 h-5 w-5" />
+              </button>
+            </div>
+          </div>
+          <div className="md:w-1/2 mt-12 md:mt-0">
+            <img 
+              src="/api/placeholder/600/400" 
+              alt="Children coloring" 
+              className="rounded-lg shadow-xl"
+            />
+          </div>
+        </div>
       </div>
+
+      {/* Features Section */}
+      <div className="bg-white py-16">
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+            Why Choose KidsColor?
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-purple-50 p-6 rounded-lg text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Palette className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Endless Variety</h3>
+              <p className="text-gray-600">
+                Hundreds of coloring pages across different themes and difficulty levels
+              </p>
+            </div>
+            <div className="bg-purple-50 p-6 rounded-lg text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Kid-Friendly</h3>
+              <p className="text-gray-600">
+                Safe and easy-to-use interface designed specifically for children
+              </p>
+            </div>
+            <div className="bg-purple-50 p-6 rounded-lg text-center">
+              <div className="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Educational</h3>
+              <p className="text-gray-600">
+                Promotes creativity, focus, and motor skill development
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-    <section className="services">
-      <h2 className="services-heading">Colouring Sheets</h2>
-      <div className="services-list">
-        
-        <div className="service-item">
-        <img className="service-logo" src="1.png" alt="Wedding Planning Logo" />
-
-        <Link to="/age1-1" style={{ textDecoration: 'none' }}> <h3>Toddlers <br/>(Ages 1-3)</h3> </Link>
-          
+      {/* Popular Categories */}
+      <div className="container mx-auto px-4 py-16">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          Popular Categories
+        </h2>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {['Animals', 'Fairy Tales', 'Space', 'Nature'].map((category) => (
+            <div key={category} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <img 
+                src="/api/placeholder/300/200" 
+                alt={category} 
+                className="w-full h-40 object-cover"
+              />
+              <div className="p-4">
+                <h3 className="text-lg font-semibold text-gray-800">{category}</h3>
+                <div className="flex items-center mt-2">
+                  <Star className="h-4 w-4 text-yellow-400 fill-current" />
+                  <span className="text-sm text-gray-600 ml-1">4.8</span>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
-
-        <div className="service-item">
-        <img className="service-logo" src="2.png" alt="Photography Logo" />
-        <Link to="/age2-2" style={{ textDecoration: 'none' }}> <h3>Preschoolers <br/>(Ages 3-5)</h3> </Link>
-          
-        </div>
-
-        <div className="service-item">
-        <img className="service-logo" src="3.png" alt="Decoration Logo" />
-
-        <Link to="/age3-3" style={{ textDecoration: 'none' }}> <h3>Early Elementary <br/>(Ages 6-8)</h3> </Link>
-          
-        </div>
-
-        <div className="service-item">
-        <img className="service-logo" src="4.png" alt="Decoration Logo" />
-
-        <Link to="/age4-4" style={{ textDecoration: 'none' }}> <h3>Late Elementary <br/> (Ages 9-12)</h3>  </Link>
-          
-        </div>
-        
       </div>
-    </section>
-    
-    <div className='use'>
-    <div className='text__data'>
-      <h2>Empowering Learning Through Coloring Books</h2>
-      <p>Coloring books can be a powerful educational tool for children living in poor parts of India, especially those attending government schools with limited resources. These books provide a creative outlet that stimulates the imagination and helps children develop essential motor skills, such as hand-eye coordination and fine motor control. For students in underprivileged areas, coloring books offer an affordable and accessible way to engage with learning, often introducing them to new concepts, shapes, and colors in a fun and interactive manner. Moreover, the act of coloring can be therapeutic, offering a sense of calm and focus, which is particularly beneficial in challenging environments where children may face daily stress and hardships. By providing a simple yet effective means of self-expression, coloring books can help bridge the gap in educational opportunities, fostering a love for learning and creativity in children who might otherwise have limited exposure to such resources.</p>
+
+      {/* Footer */}
+      
     </div>
-    <div className='illu__image'>
-    <img className="service-image" src="child.png" alt="child image" />
-    </div>  
-    </div>    
-    
-    
-    
-    <Subscribe/>
-    
-    
-    </>
   );
-}
+};
 
-export default Box;
+export default LandingPage;
