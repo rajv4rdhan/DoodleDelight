@@ -1,59 +1,296 @@
 [
-    {
-      "id": "1",
-      "name": "Shapes for Toddlers",
-      "description": "Simple shapes like circles, squares, and triangles for toddlers to color.",
-      "ageGroup": "2",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "2",
-      "name": "Animal Friends",
-      "description": "Basic drawings of friendly animals for toddlers.",
-      "ageGroup": "3",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "3",
-      "name": "Cartoon Fun",
-      "description": "Cartoon characters and simple scenes for preschoolers.",
-      "ageGroup": "2",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "4",
-      "name": "Fairy Tale Adventures",
-      "description": "Scenes and characters from popular fairy tales for preschoolers.",
-      "ageGroup": "2",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "5",
-      "name": "Animal Kingdom",
-      "description": "More detailed illustrations of animals for early elementary children.",
-      "ageGroup": "1",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "6",
-      "name": "Space Explorers",
-      "description": "Detailed space-themed scenes for early elementary children.",
-      "ageGroup": "1",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "7",
-      "name": "Mandala Art",
-      "description": "Intricate mandala designs for teens to color and enjoy.",
-      "ageGroup": "2",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    },
-    {
-      "id": "8",
-      "name": "Pop Culture Icons",
-      "description": "Coloring pages featuring popular trends and icons for teens.",
-      "ageGroup": "1",
-      "url": "https://i.imgur.com/Ulb5hvR.jpeg"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "name": "Astronaut in Space",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/rTHv5AP.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Howling Wolf",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/Z9OHecL.jpeg"
+  },
+  {
+    "id": 3,
+    "name": "Mermaid Adventure",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/50Z5Xdh.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Tortoise at Play",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/Y5QSIBM.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Curious Fox",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/3KqzOaP.jpeg"
+  },
+  {
+    "id": 6,
+    "name": "Girl with Duck",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/KdqCqpH.jpeg"
+  },
+  {
+    "id": 7,
+    "name": "Happy Elephant",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/DVjRMDA.jpeg"
+  },
+  {
+    "id": 8,
+    "name": "Girl with Fruits",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/u3GlDMq.jpeg"
+  },
+  {
+    "id": 9,
+    "name": "Elephant Parade",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/gbsLFBf.jpeg"
+  },
+  {
+    "id": 10,
+    "name": "Avocado Playtime",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/9aue1XO.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Sunflower Garden",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/DoA3KkP.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Astronaut Exploring",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/mwe4Km0.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Penguin Fun",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/FYNBUfz.jpeg"
+  },
+  {
+    "id": 14,
+    "name": "Unicorn Ride",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/hasgxAQ.jpeg"
+  },
+  {
+    "id": 15,
+    "name": "Sunflower Bloom",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/aUvjlVc.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Colorful Parrot",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/Xo9QMv7.jpeg"
+  },
+  {
+    "id": 17,
+    "name": "Playful Bunny",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/FysiS5i.jpeg"
+  },
+  {
+    "id": 18,
+    "name": "Shark Attack",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/sZgKIn5.jpeg"
+  },
+  {
+    "id": 19,
+    "name": "Sneaky Fox",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/A98Fxi0.jpeg"
+  },
+  {
+    "id": 20,
+    "name": "Playful Bunny (2nd)",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/5NW380U.jpeg"
+  },
+  {
+    "id": 21,
+    "name": "Dancing Fox",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/2jOxdWU.jpeg"
+  },
+  {
+    "id": 22,
+    "name": "Girl at Play",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/C51msqZ.jpeg"
+  },
+  {
+    "id": 23,
+    "name": "Playful Dog",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/Fvz8bHM.jpeg"
+  },
+  {
+    "id": 24,
+    "name": "Cute Rabbit",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/OH3at0S.jpeg"
+  },
+  {
+    "id": 25,
+    "name": "Howling Wolf (2nd)",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/LIOxpwk.jpeg"
+  },
+  {
+    "id": 26,
+    "name": "Curious Fox (2nd)",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/FmDWhb3.jpeg"
+  },
+  {
+    "id": 27,
+    "name": "Roaring Lion",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/0gZBNhW.jpeg"
+  },
+  {
+    "id": 28,
+    "name": "Boy in Cone Hat",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/XSytwZW.jpeg"
+  },
+  {
+    "id": 29,
+    "name": "Singing Bird",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/XnNq9eC.jpeg"
+  },
+  {
+    "id": 30,
+    "name": "Sunflower and Cactus",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/A0Mt44F.jpeg"
+  },
+  {
+    "id": 31,
+    "name": "Laughing Shark",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/8WsrNQj.jpeg"
+  },
+  {
+    "id": 32,
+    "name": "Happy Baby Elephant",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/sM59Qvj.jpeg"
+  },
+  {
+    "id": 33,
+    "name": "Gentle Deer",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/BfrvjzN.jpeg"
+  },
+  {
+    "id": 34,
+    "name": "Penguin Friends",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/Zgt0FUo.jpeg"
+  },
+  {
+    "id": 35,
+    "name": "Tortoise Journey",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/3RMl4eX.jpeg"
+  },
+  {
+    "id": 36,
+    "name": "Kitty’s Day",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/fWclnjk.jpeg"
+  },
+  {
+    "id": 37,
+    "name": "Galloping Horse",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/FIvlA2k.jpeg"
+  },
+  {
+    "id": 38,
+    "name": "Girl Studying",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/RmqbXjE.jpeg"
+  },
+  {
+    "id": 39,
+    "name": "Giraffe in Jungle",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/uWVhOgS.jpeg"
+  },
+  {
+    "id": 40,
+    "name": "Elephant Playing",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/gEfLRFj.jpeg"
+  },
+  {
+    "id": 41,
+    "name": "Bunny Fun (2nd)",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/4CCcKYJ.jpeg"
+  },
+  {
+    "id": 42,
+    "name": "Wolf in Wild",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/VVWpr2M.jpeg"
+  },
+  {
+    "id": 43,
+    "name": "Mooing Cow",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/KFSdrNs.jpeg"
+  },
+  {
+    "id": 44,
+    "name": "Bunny with Carrot",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/tq8C89t.jpeg"
+  },
+  {
+    "id": 45,
+    "name": "Laughing Dog",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/UuTa7Ut.jpeg"
+  },
+  {
+    "id": 46,
+    "name": "Magical Unicorn",
+    "ageGroup": 3,
+    "url": "https://i.imgur.com/etvy5op.jpeg"
+  },
+  {
+    "id": 47,
+    "name": "Children Playing",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/LVY6Sjr.jpeg"
+  },
+  {
+    "id": 48,
+    "name": "Flying High",
+    "ageGroup": 1,
+    "url": "https://i.imgur.com/nQFU74H.jpeg"
+  },
+  {
+    "id": 49,
+    "name": "Dinosaur Adventures",
+    "ageGroup": 2,
+    "url": "https://i.imgur.com/kJiDRmi.jpeg"
+  }
+]
