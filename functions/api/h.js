@@ -1,5 +1,4 @@
-export function onRequestPost(context) {
-    const a = context.request.params.a;
-
-    return new Response(`Hello, ${a}!`)
-  }
+export async function onRequestPost(context) {
+  console.log(`[LOGGING FROM /hello]: Params: ${JSON.stringify(context.params)}`);
+  return new Response("Hello, world!");
+}
