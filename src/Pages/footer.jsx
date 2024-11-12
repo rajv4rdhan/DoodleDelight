@@ -6,7 +6,7 @@ const Footer = () => {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
-              <h4 className="text-xl font-semibold mb-4">KidsColor</h4>
+              <h4 className="text-xl font-semibold mb-4">DOODLE</h4>
               <p className="text-purple-200">
                 Making coloring fun and educational for children around the world.
               </p>
@@ -23,10 +23,10 @@ const Footer = () => {
             <div>
               <h4 className="text-xl font-semibold mb-4">Categories</h4>
               <ul className="space-y-2">
-                <li><a href="#" className="text-purple-200 hover:text-white">Animals</a></li>
-                <li><a href="#" className="text-purple-200 hover:text-white">Fairy Tales</a></li>
-                <li><a href="#" className="text-purple-200 hover:text-white">Space</a></li>
-                <li><a href="#" className="text-purple-200 hover:text-white">Nature</a></li>
+                <li><a href="/age" className="text-purple-200 hover:text-white">All Drawings</a></li>
+                <li><a href="/age?age=1" className="text-purple-200 hover:text-white">Age Group 1</a></li>
+                <li><a href="/age?age=2" className="text-purple-200 hover:text-white">Age Group 2</a></li>
+                <li><a href="/age?age=3" className="text-purple-200 hover:text-white">Age Group 3</a></li>
               </ul>
             </div>
             <div>
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="border-t border-purple-800 mt-8 pt-8 text-center text-purple-200">
-            <p>&copy; 2024 KidsColor. All rights reserved.</p>
+            <p>&copy; 2024 DOODLE. All rights reserved.</p>
           </div>
         </div>
       </footer>

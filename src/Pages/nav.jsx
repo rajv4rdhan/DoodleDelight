@@ -9,7 +9,7 @@ function Navbar() {
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center space-x-2">
             <Palette className="h-8 w-8 text-purple-600" />
-            <span className="text-2xl font-bold text-purple-600">KidsColor</span>
+            <span className="text-2xl font-bold text-purple-600">DOODLE</span>
           </div>
           <div className="hidden md:flex space-x-6">
             <a href="/" className="text-gray-600 hover:text-purple-600">Home</a>

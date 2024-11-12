@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Download, Palette, Users, Heart, Star } from 'lucide-react';
 import PurposeSection from './purp';
+import NewDrawings from './NewDrawing';
 const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-purple-100 to-pink-100">
@@ -79,7 +80,7 @@ const LandingPage = () => {
       {/* Popular Categories */}
       {/* <div className="container mx-auto px-4 py-16">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-          Popular Categories
+          New Drawings
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {['Animals', 'Fairy Tales', 'Space', 'Nature'].map((category) => (
@@ -100,7 +101,8 @@ const LandingPage = () => {
           ))}
         </div>
       </div> */}
-
+      <a href='/age'>
+      <NewDrawings /></a>
       {/* Footer */}
       <PurposeSection />
       

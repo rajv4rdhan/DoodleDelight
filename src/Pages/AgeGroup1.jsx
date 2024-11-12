@@ -20,15 +20,15 @@ function App() {
 
         const params = new URLSearchParams(window.location.search);
         const age = params.get('age');
-
-        // Filter data based on the age parameter
+        console.log(age);
         if (age) {
           console.log('Filtering data based on age:', age);
-          const filtered = data.filter(item => item.ageGroup === age);
-          setFilteredData(filtered);
+          const filtered = data.filter(item => item.ageGroup == age);
+          setFilteredData(filtered.reverse());
+          
         }
         else {
-          setFilteredData(data); 
+          setFilteredData(data.reverse()); 
         }
       })
       .catch(error => console.error('Error fetching data:', error));
