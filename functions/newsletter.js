@@ -4,7 +4,7 @@ const MONGO_URI = process.env.MONGO_URI;
 const DATABASE_NAME = 'DOODLE';
 const COLLECTION_NAME = 'Newletter';
 
-export async function handler(event) {
+export async function onRequestPost(event) {
   if (event.request.method === 'POST') {
     const body = await event.request.json();
     const { email } = body;
