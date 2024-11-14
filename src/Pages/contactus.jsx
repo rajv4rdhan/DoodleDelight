@@ -11,15 +11,15 @@ const ContactPage = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Contact Information</h2>
             <div className="flex items-center space-x-4 mb-6">
               <MapPin className="h-6 w-6 text-purple-600" />
-              <span className="text-gray-600">123 Main Street, Anytown India</span>
+              <span className="text-gray-600"></span>
             </div>
             <div className="flex items-center space-x-4 mb-6">
               <Mail className="h-6 w-6 text-purple-600" />
-              <span className="text-gray-600">info@kidscolor.com</span>
+              <span className="text-gray-600"></span>
             </div>
             <div className="flex items-center space-x-4">
               <Phone className="h-6 w-6 text-purple-600" />
-              <span className="text-gray-600">+91 8232323223</span>
+              <span className="text-gray-600"></span>
             </div>
           </div>
           <div>

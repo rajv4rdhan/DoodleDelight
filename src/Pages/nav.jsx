@@ -17,10 +17,11 @@ function Navbar() {
             <a href="#" className="text-gray-600 hover:text-purple-600">About</a>
             <a href="/contact" className="text-gray-600 hover:text-purple-600">Contact</a>
           </div>
+          <a href='https://github.com/rajv4rdhan/DoodleDelight/blob/main/README.md'>
           <button className="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition-colors flex items-center">
-            Get Started
+            Add Drawing
             <ArrowRight className="ml-2 h-4 w-4" />
-          </button>
+          </button></a>
         </div>
       </nav>
   );
